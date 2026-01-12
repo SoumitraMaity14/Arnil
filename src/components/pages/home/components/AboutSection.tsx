@@ -3,37 +3,38 @@ import React from 'react'
 export const AboutSection = () => {
     return (
         <div className='bg-[#0F0F0F]'>
-            <section className="relative max-w-[1440px] mx-auto  py-20 overflow-hidden">
+            <section className="relative max-w-[1440px] mx-auto overflow-hidden">
                 {/* 1. Large "Arnil" Watermark at Top Right */}
-                <div className="absolute top-0 right-10 select-none opacity-20">
-                    <span className="font-['Orbitron'] text-[12rem] font-bold text-gray-500 leading-none">
+                <div className="absolute top-[-100px] left-1/2 select-none opacity-20">
+                    <span className="font-['Brave_Eightyone'] text-[15rem] font-bold text-gray-500">
                         Arnil
                     </span>
                 </div>
-
-                <div className="container mx-auto px-4 relative z-10">
-                    <div className="flex flex-col lg:flex-row items-stretch relative">
+                <div className="container mx-auto px-4 relative z-10 pt-40">
+                    <div className="flex flex-col lg:flex-row items-stretch relative bg-[#FFC700]">
 
                         {/* 2. Image Side (Left) */}
-                        <div className="absolute w-full lg:w-1/2 relative">
+                        <div className="absolute top-[-60px] w-full lg:w-1/2 relative">
                             <img
                                 src="/About.jpg"
                                 alt="Team working"
-                                className="w-full h-full object-cover border-4 border-[#FFC700]"
+                                className="w-full h-full object-cover"
                             />
                         </div>
 
                         {/* 3. Content Side (Right) */}
-                        <div className="w-full lg:w-1/2 bg-[#FFC700] p-10 lg:p-16 flex flex-col justify-center relative">
+                        <div className="w-full lg:w-1/2 bg-[#FFC700] p-10 lg:p-16 flex flex-col justify-center">
 
                             {/* 4. Vertical "Arnil" Text on the far right edge */}
-                            <div className="absolute right-0 top-0 h-full overflow-hidden hidden lg:block">
+                            {/* Vertical "Arnil" — TRUE right edge */}
+                            <div className="absolute right-[-30px] top-0 h-full overflow-hidden hidden lg:flex items-center">
                                 <span
-                                    className="font-['Orbitron'] text-9xl font-bold text-black/10 uppercase tracking-tighter inline-block rotate-90 origin-top-left translate-x-24"
+                                    className="font-['Orbitron'] text-[180px] font-bold text-black/10 uppercase rotate-90  translate-x-1/3"
                                 >
                                     Arnil
                                 </span>
                             </div>
+
 
                             <div className="relative z-20">
                                 <h2 className="font-['Orbitron'] text-4xl md:text-5xl font-bold text-black mb-6">

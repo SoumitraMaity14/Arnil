@@ -30,7 +30,7 @@ export const ServicesSection = () => {
 
   return (
     <section className="bg-[#0F0F0F] py-20 px-4">
-      <div className="container mx-auto">
+      <div className="container max-w-[1440px] mx-auto">
         
         {/* Header Area */}
         <div className="text-center mb-16">
@@ -44,39 +44,42 @@ export const ServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {services.map((service, index) => (
-            <div 
-              key={index}
-              className={`p-8 flex flex-col items-start transition-all duration-300 ${
-                service.active ? 'bg-[#FFF9E5]' : 'bg-white'
-              }`}
-            >
-              {/* Image Replacement for Icons */}
-              <div className="w-full h-40 mb-6 overflow-hidden">
-                <img 
-                  src={service.image} 
-                  alt={service.title} 
-                  className="w-full h-full object-contain"
-                />
-              </div>
+        <div className="mx-auto flex flex-wrap justify-center gap-6 mb-16">
+  {services.map((service, index) => (
+    <div
+      key={index}
+      className={`w-full sm:w-[45%] lg:w-[22%] max-w-[290px] px-5 py-10 flex flex-col items-start transition-all duration-300 ${
+        service.active ? 'bg-[#FFF9E5]' : 'bg-white'
+      }`}
+    >
+      {/* Image Replacement for Icons */}
+      <div className="mb-6 overflow-hidden">
+        <img    
+          src={service.image}
+          alt={service.title}
+          className="w-full h-full object-contain"
+        />
+      </div>
 
-              <h3 className="font-['Orbitron'] text-2xl font-bold text-black mb-4">
-                {service.title}
-              </h3>
-              
-              <p className="text-gray-700 mb-8 flex-grow">
-                {service.desc}
-              </p>
+      <h3 className="font-['Orbitron'] text-2xl font-bold text-black mb-4">
+        {service.title}
+      </h3>
 
-              <button className={`border border-black py-2 px-6 font-semibold transition-colors ${
-                service.active ? 'bg-[#FFC700] border-[#FFC700]' : 'hover:bg-black hover:text-white'
-              }`}>
-                Learn more
-              </button>
-            </div>
-          ))}
-        </div>
+      <p className="text-gray-700 mb-8 flex-grow">
+        {service.desc}
+      </p>
+
+      <button
+        className={`border border-black py-2 px-6 font-semibold transition-colors ${
+          service.active ? 'bg-[#FFC700] border-[#FFC700]' : 'hover:bg-[#FFC700]'
+        }`}
+      >
+        Learn more
+      </button>
+    </div>
+  ))}
+</div>
+
 
         {/* Bottom CTA Button */}
         <div className="flex justify-center">
