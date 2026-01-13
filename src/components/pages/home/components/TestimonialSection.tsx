@@ -5,22 +5,22 @@ export const TestimonialSection = () => {
     {
       title: "Creative Innovation",
       desc: "Every project starts with original ideas and data-driven insights.",
-      image: "/path-to-innovation-img.png"
+      image: "/idea(1).png"
     },
     {
       title: "Tech Expertise",
       desc: "We combine aesthetics with functionality for lasting results.",
-      image: "/path-to-tech-img.png"
+      image: "/idea(2).png"
     },
     {
       title: "Client-First Philosophy",
       desc: "We listen, adapt, and build around your goals.",
-      image: "/path-to-client-img.png"
+      image: "/idea(3).png"
     },
     {
       title: "Fast & Reliable Delivery",
       desc: "Agile processes that save time without cutting corners.",
-      image: "/path-to-delivery-img.png"
+      image: "/idea(4).png"
     }
   ];
 
@@ -36,8 +36,8 @@ export const TestimonialSection = () => {
           </h2>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-9">
           {features.map((item, index) => (
             <div key={index} className="relative group">
               {/* Image Box (Floating above the white card) */}
@@ -63,8 +63,8 @@ export const TestimonialSection = () => {
         </div>
 
         {/* Footer Text Area */}
-        <div className="text-center border-t border-gray-800 pt-16">
-          <h4 className="text-white text-2xl md:text-3xl font-medium italic mb-10">
+        <div className="text-center  border-gray-800 ">
+          <h4 className="text-white text-2xl md:text-3xl font-medium italic mb-12">
             We don't just design — <span className="font-bold">we build experiences that inspire and perform.</span>
           </h4>
           

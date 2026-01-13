@@ -2,19 +2,19 @@ import React from 'react'
 
 export const TestimonialSlider = () => {
   return (
-    <section className="relative bg-[#0F0F0F] overflow-hidden">
+    <section className="relative bg-[#0F0F0F]  ">
       {/* 1. Large Background Watermark (Top Left) */}
-      <div className="absolute top-0 left-10 select-none opacity-10">
+      <div className="absolute top-[-120px] left-10 select-none opacity-10">
         <span className="font-['Orbitron'] text-[15rem] font-bold text-gray-400 leading-none">
           Arnil
         </span>
       </div>
 
-      <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="flex flex-col lg:flex-row items-stretch min-h-[500px]">
+      <div className="container mx-auto py-20 relative z-10 overflow-hidden">
+        <div className="flex flex-col lg:flex-row items-stretch min-h-[550px] bg-[#FFC700]">
           
           {/* 2. Content Side (Left) */}
-          <div className="w-full lg:w-1/2 bg-[#FFC700] p-10 lg:p-16 flex flex-col justify-center relative">
+          <div className="w-full lg:w-1/2  p-10 lg:p-16 flex flex-col justify-center relative">
             
             {/* Vertical Background Text */}
             <div className="absolute left-0 top-0 h-full overflow-hidden hidden lg:block">
@@ -58,9 +58,9 @@ export const TestimonialSlider = () => {
           </div>
 
           {/* 3. Image Side (Right) */}
-          <div className="w-full lg:w-1/2 relative">
+          <div className="w-full lg:w-1/2 absolute top-[-90px] right-0">
             <img 
-              src="path-to-happy-clients-image.jpg" 
+              src="/client.jpg" 
               alt="Satisfied Clients" 
               className="w-full h-full object-cover grayscale-[20%] contrast-[1.1]"
             />
