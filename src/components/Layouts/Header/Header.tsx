@@ -2,13 +2,13 @@
 
 export const Header = () => {
   return (
-    <header className="bg-[#111111]  text-white px-6 py-4  font-sans">
+    <header className="bg-[#111111]  text-white px-[100px] py-4  font-sans">
         <div className="max-w-[1440px] mx-auto flex items-center justify-between">
-      <div className="flex items-center bg-black">
+      <div className=" flex items-center bg-black">
         <img 
           src="/header-logo.png" 
           alt="Arnil Technology Solutions" 
-          className="h-12 w-auto bg-black" 
+          className="max-w-[185px] max-h-[64px]  bg-black" 
         />
       </div>
 
