@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Facebook, Instagram, Linkedin, Phone, Mail, MapPin } from 'lucide-react';
 import ContactSection from './ContactSection';
 

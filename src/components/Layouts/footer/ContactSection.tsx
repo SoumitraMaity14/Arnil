@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { User, Mail, Phone, Globe, MessageSquare } from 'lucide-react';
 
 const ContactSection = () => {
